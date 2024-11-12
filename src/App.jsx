@@ -17,7 +17,7 @@ export default function App() {
       <AvailableFor />
       <WorkingSection />
       <PricingSection />
-      {/* <Testimonial /> */}
+      <Testimonial />
       <Footer />
     </div>
   );

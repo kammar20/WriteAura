@@ -11,7 +11,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('./src/assets/svg/bg.svg')",
+        'hero-pattern': "url('/src/assets/svg/bg.svg')",
         'custom-gradient': 'linear-gradient(to right, #737373, #404040)',
         'custom-gradient-text': 'linear-gradient(to right, #e5e5e5, #a3a3a3)',
       },
