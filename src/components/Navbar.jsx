@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import { LuMenu, LuX } from 'react-icons/lu';
 
-export default function Navbar() {
+export default function Navbar({
+  scrollToSection,
+  featureRef,
+  priceRef,
+  testRef,
+  faqRef,
+}) {
   const [openModal, setOpenModal] = useState(false);
   const [showBorder, setShowBorder] = useState(false);
 
@@ -30,15 +36,39 @@ export default function Navbar() {
       <div className={`flex justify-between items-center`}>
         {/* logo */}
         <div>
-          <h1 className="text-3xl font-semibold font-logo">WriteAura</h1>
+          <h1
+            onClick={() => scrollToSection(heroRef)}
+            className="text-3xl font-semibold font-logo cursor-pointer"
+          >
+            WriteAura
+          </h1>
         </div>
         {/* nav-menu */}
         <ul className="hidden lg:flex gap-8">
-          <li>Home</li>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Testimonials</li>
-          <li>Contact Us</li>
+          <li
+            onClick={() => scrollToSection(featureRef)}
+            className="cursor-pointer"
+          >
+            Features
+          </li>
+          <li
+            onClick={() => scrollToSection(priceRef)}
+            className="cursor-pointer"
+          >
+            Pricing
+          </li>
+          <li
+            onClick={() => scrollToSection(testRef)}
+            className="cursor-pointer"
+          >
+            Testimonials
+          </li>
+          <li
+            onClick={() => scrollToSection(faqRef)}
+            className="cursor-pointer"
+          >
+            FAQ
+          </li>
         </ul>
         {/* Button */}
         <button className="hidden lg:block bg-custom-gradient py-1.5 px-4 rounded hover:translate-y-[-2px] transition-all">
@@ -51,13 +81,32 @@ export default function Navbar() {
       </div>
       {/* Modal open and Close */}
       {openModal && (
-        <div className="z-10">
+        <div>
           <ul className="flex flex-col items-start gap-8 pt-8 mb-8 lg:hidden ">
-            <li>Home</li>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Testimonials</li>
-            <li>Contact Us</li>
+            <li
+              onClick={() => scrollToSection(featureRef)}
+              className="cursor-pointer"
+            >
+              Features
+            </li>
+            <li
+              onClick={() => scrollToSection(priceRef)}
+              className="cursor-pointer"
+            >
+              Pricing
+            </li>
+            <li
+              onClick={() => scrollToSection(testRef)}
+              className="cursor-pointer"
+            >
+              Testimonials
+            </li>
+            <li
+              onClick={() => scrollToSection(faqRef)}
+              className="cursor-pointer"
+            >
+              FAQ
+            </li>
           </ul>
           {/* Button */}
           <div className="pb-4">

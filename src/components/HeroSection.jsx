@@ -1,5 +1,3 @@
-// look for size
-
 export default function HeroSection() {
   return (
     <section className="bg-hero-pattern px-[3%] pt-20 pb-28 md:pt-28 md:pb-28 lg:pt-32 lg:pb-32 2xl:pt-40 2xl:pb-36">
