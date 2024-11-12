@@ -51,7 +51,7 @@ export default function Navbar() {
       </div>
       {/* Modal open and Close */}
       {openModal && (
-        <div>
+        <div className="z-10">
           <ul className="flex flex-col items-start gap-8 pt-8 mb-8 lg:hidden ">
             <li>Home</li>
             <li>Features</li>
