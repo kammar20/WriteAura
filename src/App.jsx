@@ -1,12 +1,14 @@
 import AvailableFor from './components/AvailableFor';
+import FaqSection from './components/FaqSection';
 import FeaturesSection from './components/FeaturesSection';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
 import PricingSection from './components/PricingSection';
+import ReadyToJoin from './components/ReadyToJoin';
+import TeamSection from './components/TeamSection';
 import Testimonial from './components/Testimonial';
 import WorkingSection from './components/WorkingSection';
-import { PricingData } from './constant/data';
 
 export default function App() {
   return (
@@ -18,6 +20,9 @@ export default function App() {
       <WorkingSection />
       <PricingSection />
       <Testimonial />
+      <FaqSection />
+      <TeamSection />
+      <ReadyToJoin />
       <Footer />
     </div>
   );

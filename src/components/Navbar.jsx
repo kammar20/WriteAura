@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`max-w-[100%] sticky top-0 z-10 backdrop-blur-xl px-[3%] py-5 ${
+      className={`max-w-[100%] sticky top-0 z-10 backdrop-blur-3xl px-[3%] py-5 ${
         showBorder ? 'border-b-2 border-neutral-500' : ''
       }`}
     >

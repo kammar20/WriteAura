@@ -15,6 +15,10 @@ export default {
         'custom-gradient': 'linear-gradient(to right, #737373, #404040)',
         'custom-gradient-text': 'linear-gradient(to right, #e5e5e5, #a3a3a3)',
       },
+      boxShadow: {
+        custome: 'inset -15px 15px 33px -33px rgba(229, 229, 229, .3)',
+        custome2: 'inset 0px 11px 20px -9px rgba(299,299,299,0.3)',
+      },
 
       fontFamily: {
         logo: ['Sour Gummy', 'sans-serif'],

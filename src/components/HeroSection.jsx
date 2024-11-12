@@ -2,15 +2,16 @@
 
 export default function HeroSection() {
   return (
-    <section className="bg-hero-pattern pt-28 pb-24 px-[3%]">
+    <section className="bg-hero-pattern px-[3%] pt-20 pb-28 md:pt-28 md:pb-28 lg:pt-32 lg:pb-32 2xl:pt-40 2xl:pb-36">
       <div>
-        <h1 className="sm:max-w-[85%] m-auto text-3xl text-center mb-5 md:text-4xl lg:text-5xl lg:leading-snug xl:text-6xl xl:font-medium xl:leading-snug xl:max-w-[70%]">
+        <h1 className="text-2xl text-center mb-5 m-auto sm:max-w-[80%] md:max-w-[70%] md:text-4xl lg:text-5xl lg:leading-snug xl:text-6xl xl:font-medium xl:leading-snug xl:max-w-[70%]">
           Enhance Your Writing with Intelligent{' '}
           <span className="bg-clip-text text-transparent bg-custom-gradient-text">
             AI Assistance
           </span>
         </h1>
-        <p className="max-w-[80%] m-auto text-sm text-center text-neutral-400 mb-10 md:text-base lg:text-lg lg:max-w-[60%] xl:max-w-[50%]">
+
+        <p className="max-w-[80%] m-auto text-sm text-center text-neutral-400 mb-10 sm:max-w-[65%] md:text-base lg:text-lg lg:max-w-[55%] xl:max-w-[60%]">
           Transform your thoughts into clear, impactful text with WriteAura.
           Write smarter, edit faster, and let your words flow effortlessly.
         </p>

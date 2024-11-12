@@ -1,14 +1,23 @@
-import { MdLightbulbOutline } from 'react-icons/md';
+import { MdLightbulbOutline, MdTune } from 'react-icons/md';
 import { AiOutlineCheckCircle } from 'react-icons/ai';
-import { FaExpandArrowsAlt } from 'react-icons/fa';
-import { MdTune } from 'react-icons/md';
+import {
+  FaExpandArrowsAlt,
+  FaRegEdit,
+  FaGithub,
+  FaLinkedin,
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from 'react-icons/fa';
 import { TfiShield } from 'react-icons/tfi';
-import { RiBookOpenLine } from 'react-icons/ri';
-
-import { RiTextBlock } from 'react-icons/ri';
+import { RiBookOpenLine, RiTextBlock } from 'react-icons/ri';
 import { HiOutlineSparkles } from 'react-icons/hi';
-import { FaRegEdit } from 'react-icons/fa';
 import { PiUserCircleCheck } from 'react-icons/pi';
+
+import user1 from '../assets/profile-pictures/user1.jpg';
+import user2 from '../assets/profile-pictures/user2.jpg';
+import user3 from '../assets/profile-pictures/user3.jpg';
 
 // Feature Section
 export const featureData = [
@@ -125,4 +134,128 @@ export const PricingData = [
       'Priority support',
     ],
   },
+];
+
+// Faq Data
+export const FaqData = [
+  {
+    id: 1,
+    question: 'Is there a free version of WriteAura?',
+    answer:
+      'Yes! Our Free Plan includes basic grammar and spell-checking to get you started.',
+  },
+  {
+    id: 2,
+    question: 'Can I set different tones in WriteAura?',
+    answer:
+      'Absolutely! You can choose from various tone options to best match your audience.',
+  },
+  {
+    id: 3,
+    question: 'Is my data secure with WriteAura?',
+    answer:
+      'Yes, we prioritize your privacy and use top security standards to keep your information safe.',
+  },
+  {
+    id: 4,
+    question: 'Does WriteAura work with other applications?',
+    answer:
+      'Yes, you can easily integrate WriteAura with your favorite platforms like Google Docs and email.',
+  },
+  {
+    id: 5,
+    question: 'Can I customize WriteAura’s suggestions?',
+    answer:
+      'Yes! WriteAura allows you to tailor suggestions based on your preferences, helping you maintain your unique style and voice.',
+  },
+  {
+    id: 6,
+    question: 'Does WriteAura support multiple languages?',
+    answer:
+      'Currently, WriteAura supports English, but we’re working to expand to other languages soon!',
+  },
+];
+
+// Team Data
+export const TeamData = [
+  {
+    id: 1,
+    imgSrc: user1,
+    fullName: 'Eric Fennis',
+    info: 'Creator of Lucide & Software engineer @nedap',
+    socials: [
+      {
+        socialId: 1,
+        iconSrc: <FaGithub />,
+      },
+      {
+        socialId: 2,
+        iconSrc: <FaLinkedin />,
+      },
+    ],
+  },
+  {
+    id: 2,
+    imgSrc: user2,
+    fullName: 'Karsa Rigó',
+    info: 'Maintainer of Lucide & Software engineer @sztaki',
+    socials: [
+      {
+        socialId: 1,
+        iconSrc: <FaGithub />,
+      },
+      {
+        socialId: 2,
+        iconSrc: <FaLinkedin />,
+      },
+    ],
+  },
+  {
+    id: 3,
+    imgSrc: user3,
+    fullName: 'Jakob Guddas',
+    info: 'Maintainer of Lucide & Software engineer @LEGO',
+    socials: [
+      {
+        socialId: 1,
+        iconSrc: <FaGithub />,
+      },
+      {
+        socialId: 2,
+        iconSrc: <FaLinkedin />,
+      },
+    ],
+  },
+];
+
+// Footer Data
+export const FooterSocial = [
+  { id: 1, iconType: <FaFacebookF /> },
+  { id: 2, iconType: <FaTwitter /> },
+  { id: 3, iconType: <FaInstagram /> },
+  { id: 4, iconType: <FaLinkedinIn /> },
+];
+
+export const FooterProducts = [
+  'Pricing',
+  'Payout',
+  'Data pipeline',
+  'Capital',
+  'Revenue Recognition',
+];
+
+export const FooterService = [
+  'Start up',
+  'Enterprise',
+  'SaaS',
+  'Platforms',
+  'Marketplace',
+];
+
+export const FooterResource = [
+  'Guides',
+  'Customers Stories',
+  'Blog',
+  'Privacy & Term',
+  'Businesses',
 ];
