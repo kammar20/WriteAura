@@ -39,7 +39,7 @@ export default function Navbar({
         <div>
           <h1
             onClick={() => scrollToSection(heroRef)}
-            className="text-3xl font-semibold font-logo cursor-pointer"
+            className="text-3xl font-semibold font-logo cursor-pointer select-none"
           >
             WriteAura
           </h1>
