@@ -26,13 +26,15 @@ export default function App() {
     <div className="max-w-[1600px] mx-auto">
       <Navbar
         scrollToSection={scrollToSection}
+        heroRef={heroRef}
         featureRef={featureRef}
         priceRef={priceRef}
         testRef={testRef}
         faqRef={faqRef}
       />
-
-      <HeroSection />
+      <div ref={heroRef}>
+        <HeroSection />
+      </div>
 
       <div ref={featureRef}>
         <FeaturesSection />

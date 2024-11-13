@@ -3,6 +3,7 @@ import { LuMenu, LuX } from 'react-icons/lu';
 
 export default function Navbar({
   scrollToSection,
+  heroRef,
   featureRef,
   priceRef,
   testRef,
