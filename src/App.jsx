@@ -22,6 +22,7 @@ export default function App() {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   }
 
+  //
   return (
     <div className="max-w-[1600px] mx-auto">
       <Navbar

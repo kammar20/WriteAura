@@ -1,6 +1,7 @@
 import { featureData } from '../constant/data';
 export default function FeaturesSection() {
   return (
+    //
     <section className="max-w-[1400px] mx-auto px-[3%] pt-24">
       <h2 className="bg-clip-text text-transparent bg-custom-gradient-text text-2xl text-center mb-2 md:text-3xl lg:text-4xl xl:text-5xl">
         What's Included
